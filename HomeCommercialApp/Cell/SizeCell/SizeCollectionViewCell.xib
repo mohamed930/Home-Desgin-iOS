@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="Cell" id="YNw-BT-ZQu" customClass="SizeCollectionViewCell" customModule="HomeCommercialApp" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="7z9-bf-h4E">
+                <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Dvo-DC-I76">
+                        <rect key="frame" x="0.0" y="0.0" width="70" height="70"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="38" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jZJ-CL-Efa">
+                                <rect key="frame" x="24" y="24.5" width="22" height="21.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="0.85999999999999999" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="jZJ-CL-Efa" firstAttribute="centerY" secondItem="Dvo-DC-I76" secondAttribute="centerY" id="GbF-30-Aht"/>
+                            <constraint firstItem="jZJ-CL-Efa" firstAttribute="centerX" secondItem="Dvo-DC-I76" secondAttribute="centerX" id="KmS-HZ-Lpf"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="Dvo-DC-I76" secondAttribute="bottom" id="AXP-Hi-qba"/>
+                    <constraint firstAttribute="trailing" secondItem="Dvo-DC-I76" secondAttribute="trailing" id="Ifo-Rz-Kie"/>
+                    <constraint firstItem="Dvo-DC-I76" firstAttribute="leading" secondItem="7z9-bf-h4E" secondAttribute="leading" id="cTi-g8-UsO"/>
+                    <constraint firstItem="Dvo-DC-I76" firstAttribute="top" secondItem="7z9-bf-h4E" secondAttribute="top" id="yEy-Gf-wjA"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="70" height="70"/>
+            <connections>
+                <outlet property="SizeLabel" destination="jZJ-CL-Efa" id="9jL-K7-xla"/>
+                <outlet property="View" destination="Dvo-DC-I76" id="yl9-30-m1Y"/>
+            </connections>
+            <point key="canvasLocation" x="146.37681159420291" y="119.19642857142857"/>
+        </collectionViewCell>
+    </objects>
+</document>
